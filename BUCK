@@ -9,9 +9,8 @@ cxx_library(
   visibility = ['PUBLIC']
 )
 
-
 cxx_binary(
   name = 'main',
-  deps = [':kafel'],
-  srcs = ['main.cpp']
-);
+  srcs = ['test/main.cpp'],
+  deps = [':kafel']
+)
